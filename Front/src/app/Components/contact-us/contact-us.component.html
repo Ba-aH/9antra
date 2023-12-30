@@ -1,13 +1,13 @@
  
 <div class="contact">
-<form>
+<form [formGroup]="myform" >
         <h3>Contact Us</h3>
     <label for="name">NAME</label><br>
-        <input type="text" id="name" name="name" placeholder="Jira Martins"><br>
+        <input type="text" id="name" name="name" placeholder="Jira Martins"formControlName="name"><br>
     <label for="email">EMAIL</label><br>
-        <input type="text" id="email" name="email" placeholder="Hello@reallygreatsite.com" ><br>
+        <input type="text" id="email" name="email" placeholder="Hello@reallygreatsite.com" formControlName="email"><br>
     <Label for="message">MESSAGE</Label><br>
-        <textarea id="message" name="message" placeholder="Write your message here"></textarea><br>
-        <input type="submit" id="msg_btn" value="Send the message">
+        <textarea id="message" name="message" placeholder="Write your message here"formControlName="message"></textarea><br>
+        <input type="submit" id="msg_btn" value="Send the message"(click)="addFeedback()">
 </form>
 </div>       

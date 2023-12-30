@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
+import { MyDataService } from 'src/app/Services/my-data.service';
 
 @Component({
   selector: 'app-home',
-  template: `
-    <app-landing-page></app-landing-page>
-    <app-discover-courses></app-discover-courses>
-    <app-contact-us></app-contact-us>
-  `,
+  templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
+  constructor(){
+    
+  }
 }

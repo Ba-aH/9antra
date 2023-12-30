@@ -1,0 +1,10 @@
+<div style="display: flex; flex-wrap: wrap;">
+    <div *ngFor="let course of myData" class="card" style="width: 25rem; margin: 10px;">
+      <div class="card-body">
+        <img src="assets/image/1.jpeg" alt="Course Image" style="width: 100%; height: auto; margin-bottom: 10px;">
+        <h4 class="card-title">{{ course.tiltle }}</h4>
+        <p class="card-text" style="color: rgb(219, 79, 102);">{{ course.price }} DT/ Month</p>
+      </div>
+    </div>
+  </div>
+  

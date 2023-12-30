@@ -6,11 +6,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { LandingPageComponent } from './Components/landing-page/landing-page.component';
 import { DiscoverCoursesComponent } from './Components/discover-courses/discover-courses.component';
-import { CoursesComponent } from './Components/courses/courses.component';
 import { ContactUsComponent } from './Components/contact-us/contact-us.component';
-import { AddCourseComponent } from './Components/add-course/add-course.component';
-import { HomeComponent } from './Components/home/home.component';
-import { SignUpComponent } from './Components/sign-up/sign-up.component';
+import { AddCourseComponent } from './Interface/Admin/add-course/add-course.component';
+import { HomeComponent } from './Interface/Client/home/home.component';
+import { SignUpComponent } from './Interface/Client/sign-up/sign-up.component';
+import { LoginComponent } from './Interface/login/login.component';
+import { DashboardComponent } from './Interface/Admin/dashboard/dashboard.component';
+import { ViewCoursesComponent } from './Interface/Client/view-courses/view-courses.component';
+import { ManageCoursesComponent } from './Interface/Admin/manage-courses/manage-courses.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CoursesComponent } from './Interface/courses/courses.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -18,16 +24,22 @@ import { SignUpComponent } from './Components/sign-up/sign-up.component';
     HeaderComponent,
     LandingPageComponent,
     DiscoverCoursesComponent,
-    CoursesComponent,
     ContactUsComponent,
     AddCourseComponent,
     HomeComponent,
-    SignUpComponent
+    SignUpComponent,
+    LoginComponent,
+    DashboardComponent,
+    ViewCoursesComponent,
+    CoursesComponent,
+    ManageCoursesComponent
   ],
   imports: [
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     BrowserModule,
+    CommonModule,
     AppRoutingModule
   ],
   providers: [],
